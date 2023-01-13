@@ -72,7 +72,7 @@ class Status_ui extends StatelessWidget {
             ),
             Padding(
               padding:
-                  const EdgeInsets.only(left: 2, top: 5, bottom: 5, right: 260),
+                  const EdgeInsets.only(right: 260),
               child: Text(
                 "Viewed updates",
                 style: TextStyle(color: Colors.grey.shade600, fontSize: 15),
@@ -126,7 +126,7 @@ class Status_ui extends StatelessWidget {
         ),
         Positioned(
             right: 15,
-            top: 550,
+            top: 500,
             child: Column(
               children: [
                 CircleAvatar(

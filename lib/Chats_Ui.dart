@@ -93,7 +93,7 @@ class Chats_ui extends StatelessWidget {
         ),
         Positioned(
           right: 12,
-            top: 580,
+            top: 550,
             child: Row(
           children: [
             CircleAvatar(

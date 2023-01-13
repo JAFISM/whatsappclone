@@ -29,6 +29,16 @@ class Calls_Ui extends StatelessWidget {
     '26/12/22,4:30pm',
     '27/12/22,2:30pm',
   ];
+  var callicon=[
+   Icon (Icons.call_received_outlined,color: Colors.green,),
+    Icon(Icons.call_made_rounded,color: Colors.red,),
+   Icon (Icons.call_received_outlined,color: Colors.green,),
+    Icon (Icons.call_received_outlined,color: Colors.red,),
+    Icon  (Icons.call_made_rounded,color: Colors.red,),
+    Icon (Icons.call_received_outlined,color: Colors.green,),
+    Icon (Icons.call_received_outlined,color: Colors.red,),
+    Icon (Icons.call_made_rounded,color: Colors.red,),
+  ];
   var images = [
     'assets/images/whatsapp default avatar.JPG',
     'assets/images/whatsapp default avatar.JPG',
@@ -77,7 +87,12 @@ class Calls_Ui extends StatelessWidget {
                     color: Colors.white,
                     child: ListTile(
                       title: Text(name[index]),
-                      subtitle: Text(time[index]),
+                      subtitle: Row(
+                        children: [
+                          callicon[index],
+                          Text(time[index])
+                        ],
+                      ),
                       leading: CircleAvatar(
                           backgroundImage: AssetImage(images[index])),
                       trailing: Icon(
